@@ -1,0 +1,253 @@
+.watch-party-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.watch-party-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #e50914;
+  margin: 0;
+}
+
+.join-by-code {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.join-by-code h3 {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.join-input-group {
+  display: flex;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.join-input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.join-input:focus {
+  outline: none;
+  border-color: #e50914;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.parties-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.no-parties {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.no-parties h4 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.no-parties p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.parties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.party-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.party-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(229, 9, 20, 0.2);
+}
+
+.party-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.party-header h4 {
+  margin: 0;
+  color: #e50914;
+  font-size: 1.3rem;
+}
+
+.party-status {
+  font-size: 0.9rem;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.party-details {
+  margin-bottom: 20px;
+}
+
+.party-details p {
+  margin: 8px 0;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.party-details strong {
+  color: #fff;
+}
+
+.party-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #e50914;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #f40612;
+  transform: translateY(-2px);
+}
+
+.btn-primary:disabled {
+  background: #666;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #218838;
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #0a0a0a;
+}
+
+@media (max-width: 768px) {
+  .watch-party-content {
+    padding: 20px 15px;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+  
+  .join-input-group {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  
+  .parties-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .party-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,46 @@
+/* Search input center */
+.search-input {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+}
+
+/* Filter buttons */
+/* .filters button {
+  border-radius: 20px;
+  padding: 6px 18px;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  transform: scale(1.1);
+} */
+/* Filter buttons */
+.filters button {
+  border-radius: 20px;
+  padding: 6px 18px;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #fff;              /* normal text color */
+  border: 1.5px solid #fff; /* normal border */
+}
+
+/* ✅ Hover: white bg, black text, black outline */
+.filters button:hover {
+  background-color: #fff;
+  color: #000;              /* text black */
+  border: 1.5px solid #000; /* black outline */
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.dropdown-item:hover {
+  background-color: #000;
+  color: #fff;
+}

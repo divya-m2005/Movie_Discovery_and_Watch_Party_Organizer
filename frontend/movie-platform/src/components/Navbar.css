@@ -1,0 +1,110 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-brand h2 {
+  margin: 0;
+  color: #667eea;
+}
+
+.search-form {
+  display: flex;
+  flex: 1;
+  max-width: 400px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px 0 0 8px;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.search-btn {
+  padding: 0.5rem 1rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-select {
+  padding: 0.5rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  background: white;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.profile-btn {
+  background: #f8f9fa;
+  border: 2px solid #e1e5e9;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border: 1px solid #e1e5e9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-top: 0.5rem;
+}
+
+.logout-btn {
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: #dc3545;
+}
+
+.logout-btn:hover {
+  background: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .search-form {
+    max-width: 100%;
+  }
+  
+  .filters {
+    flex-wrap: wrap;
+  }
+}

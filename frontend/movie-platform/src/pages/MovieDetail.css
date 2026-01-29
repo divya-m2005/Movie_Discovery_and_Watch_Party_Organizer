@@ -1,0 +1,279 @@
+/* .movie-detail {
+  color: #000;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.movie-detail img {
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.movie-detail h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.movie-detail .text-muted {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.movie-detail p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.movie-detail strong {
+  font-weight: 600;
+}
+
+
+.movie-detail .badge {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  background: #222;
+  color: #fff;
+}
+
+.cast-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.cast-card {
+  flex: 1 0 18%; 
+  text-align: center;
+}
+
+.cast-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-bottom: 8px;
+}
+
+.cast-card .name {
+  font-weight: 700; 
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.cast-card .character {
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+
+.similar-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.similar-card {
+  flex: 1 0 22%; 
+  cursor: pointer;
+  text-align: center;
+}
+
+.similar-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  margin-bottom: 8px;
+}
+
+.similar-card p {
+  font-size: 0.9rem;
+  font-weight: 600;
+} */
+/* Movie Detail Container */
+.movie-detail {
+  color: #000;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Poster */
+.movie-detail img {
+  border-radius: 16px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Title */
+.movie-detail h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Tagline */
+.movie-detail .text-muted {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+/* Overview */
+.movie-detail p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Meta info */
+.movie-detail strong {
+  font-weight: 600;
+}
+
+/* Genres */
+.movie-detail .badge {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: 20px;
+  background: #222;
+  color: #fff;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* ---------------- CAST & CREW ---------------- */
+.cast-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Exactly 5 per row */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.cast-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cast-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%; /* Perfect circle */
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  border: 3px solid #fff;
+}
+
+.cast-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.cast-card .name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+.cast-card .character {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: center;
+  margin: 0;
+}
+
+/* ---------------- SIMILAR MOVIES ---------------- */
+.similar-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.similar-card {
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.similar-card:hover {
+  transform: translateY(-5px);
+}
+
+.similar-card img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  margin-bottom: 10px;
+}
+
+.similar-card p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 1200px) {
+  .cast-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .similar-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .cast-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .similar-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cast-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .similar-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cast-card img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+.movie-detail .btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.movie-detail .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

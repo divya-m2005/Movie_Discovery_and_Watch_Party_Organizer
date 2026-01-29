@@ -1,0 +1,22 @@
+/* Full height setup */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* App layout wrapper */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows and pushes footer down */
+.content {
+  flex: 1;
+}
+
+/* Optional footer styling */
+.footer {
+  width: 100%;
+}

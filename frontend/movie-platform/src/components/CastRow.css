@@ -1,0 +1,77 @@
+.cast-section {
+  margin: 2rem 0;
+}
+
+.cast-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.cast-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.cast-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cast-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  border: 3px solid #fff;
+}
+
+.cast-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.cast-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+  text-align: center;
+  color: #333;
+}
+
+.cast-character {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .cast-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .cast-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .cast-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cast-image {
+    width: 80px;
+    height: 80px;
+  }
+}

@@ -1,0 +1,165 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid #333;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #333;
+}
+
+.modal-header h2 {
+  margin: 0;
+  color: #e50914;
+  font-size: 1.8rem;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content form {
+  padding: 25px;
+}
+
+.modal-content .form-group {
+  margin-bottom: 20px;
+}
+
+.modal-content .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.modal-content .form-group input,
+.modal-content .form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2d2d2d;
+  color: #fff;
+  transition: border-color 0.3s;
+}
+
+.modal-content .form-group input:focus,
+.modal-content .form-group textarea:focus {
+  outline: none;
+  border-color: #e50914;
+}
+
+.modal-content .form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 25px;
+}
+
+.party-created {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.party-created h3 {
+  color: #28a745;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.party-details {
+  margin-bottom: 25px;
+  background: #2d2d2d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.detail-item {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.detail-item label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.copy-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.copy-field span {
+  flex: 1;
+  padding: 10px 15px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-family: monospace;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.copy-field .link {
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.copy-btn {
+  padding: 8px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,156 @@
+.watchlist-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.watchlist-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.watchlist-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #e50914;
+  text-align: center;
+}
+
+.empty-watchlist {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.empty-watchlist h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.empty-watchlist p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.watchlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.watchlist-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.watchlist-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(229, 9, 20, 0.3);
+}
+
+.watchlist-poster {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.watchlist-poster:hover {
+  transform: scale(1.05);
+}
+
+.watchlist-info {
+  padding: 20px;
+}
+
+.watchlist-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.watchlist-title:hover {
+  color: #e50914;
+}
+
+.watchlist-year {
+  color: #ccc;
+  margin: 0 0 8px 0;
+  font-size: 0.9rem;
+}
+
+.watchlist-rating {
+  color: #f39c12;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #e50914;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #f40612;
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #0a0a0a;
+}
+
+@media (max-width: 768px) {
+  .watchlist-content {
+    padding: 20px 15px;
+  }
+  
+  .watchlist-content h1 {
+    font-size: 2rem;
+  }
+  
+  .watchlist-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .empty-watchlist {
+    padding: 40px 15px;
+  }
+}
